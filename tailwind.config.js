@@ -19,7 +19,7 @@ module.exports = {
       },
 
       fontFamily: {
-        default: ['DM Sans', 'sans-serif']
+        default: ['DM Sans Regular', 'sans-serif']
       },
 
       fontWeight: {
