@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="./chart.js/dist/chart.min.js"></script>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.gtstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
 </head>
 <body class="bg-cream font-default">
-  <section class="container mx-auto items-center lg:max-w-4xl lg:my-6 md:max-w-2xl md:my-16
-  sm:max-w-lg sm:my-8 xs:max-w-sm xs:my-4">
+  <section class="container mx-auto items-center lg:max-w-4xl lg:my-6 md:max-w-2xl md:my-16">
 
     <!--Header and Rest Div-->
-    <div class="flex flex-col justify-between space-y-4 lg:py-4 lg:px-52 md:py-4 md:px-36 sm:py-4 sm:px-12 drop-shadow-lg">
+    <div class="flex flex-col justify-between space-y-4 lg:py-4 lg:px-52 md:py-4 md:px-36 sm:py-4 sm:px-4 sm:mx-auto xs:m-auto drop-shadow-lg">
 
       <!--Head-->
       <div class="flex flex-row bg-softRed rounded-2xl pt-1 justify-between">
         <!--Left Text-->
-        <div class="flex flex-col py-4 px-4 pl-8 justify-between space-y-1.5 align-baseline">
+        <div class="flex flex-col py-4 px-4 pl-8 justify-between space-y-1.5 align-baseline sm:space-y-o">
           <p class="text-white">My balance</p>
-          <h2 class="font-bold text-2xl text-white">$921.48</h2>
+          <h2 class="font-700 text-2xl text-white sm:text-xl">$921.48</h2>
         </div>
         <!--Image on the Right-->
         <div class="py-6 px-4 pr-8">
@@ -33,27 +35,28 @@
       <div class="flex flex-col bg-veryPaleOrange rounded-2xl justify-between">
 
         <!--Leading Text-->
-        <div class="items-center py-4 px-4 pb-6 pl-8 pt-6">
-          <h3 class="text-2xl font-bold text-darkBrown font-700">Spending - Last 7 days</h3>
+        <div class="py-4 px-4 pb-6 pl-8 pt-6">
+          <h3 class="text-2xl font-bold text-darkBrown font-700 sm:text-xl">Spending - Last 7 days</h3>
         </div>
 
         <!--Mid-section Chart-->
-        <canvas id="myChart" class="mx-8"></canvas>
+        <canvas id="myChart" class="mx-8 justify-center"></canvas>
         <!--See Javascript file specified under the HTML Body Section-->
         <hr class="bg-black mx-8">
 
         <!--lower section-->
-        <div class="flex flex-row justify-between space-x-6">
+        <div class="flex flex-row justify-between py-4 sm:space-x-6">
 
           <!--Left-->
-          <div class="flex flex-col py-4 px-4 pl-8 justify-between space-y-0 align-baseline">
-            <p class="text-mediumBrown">Total this month</p>
-            <h2 class="text-4xl font-bold text-darkBrown">$478.33</h2>
+          <div class="flex flex-col pl-8 justify-between
+          md:py-2 md:px-2 md:pl-4">
+            <p class="text-mediumBrown pt-3 sm:text-sm sm:pt-6">Total this month</p>
+            <h2 class="text-3xl font-700 font-bold text-darkBrown sm:pb-4">$478.33</h2>
           </div>
           <!--Right-->
-          <div class="flex flex-col py-4 px-4 justify-between space-y-0.5 pr-8 pt-10">
-            <h5 class="pl-16 font-700">+2.4%</h5>
-            <p class="align-baseline text-mediumBrown">from last month</p>
+          <div class="flex flex-col pr-8 justify-between items-end">
+            <h5 class="pl-16 font-700 pt-8 md:pt-12 lg:pt-12">+2.4%</h5>
+            <h5 class="text-mediumBrown lg:pb-8 sm:pb-6 sm:text-sm">from last month</h5>
           </div>
         </div>
       </div>
@@ -61,7 +64,7 @@
   </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Islajr">Isla Archer</a>.
+    Coded by <a href="https://github.com/Islajr">Isaac Akinmokun</a>.
   </div>
   <script src="./mychart.js"></script>
 </body>

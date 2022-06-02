@@ -2,6 +2,7 @@ module.exports = {
   content: ["./*.html", "./*.js"],
   theme: {
     screens: {
+      xs: '360px',
       sm: '375px',
       md: '768px',
       lg: '976px',
@@ -18,7 +19,7 @@ module.exports = {
       },
 
       fontFamily: {
-        default: ['DM Sans Regular', 'sans-serif']
+        default: ['DM Sans', 'sans-serif']
       },
 
       fontWeight: {
